@@ -10,3 +10,7 @@ class TestApp(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class TestFailureDemo(unittest.TestCase):
+    def test_deliberate_failure(self):
+        self.assertEqual(2 + 2, 5)
